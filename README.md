@@ -69,7 +69,7 @@ This makes it possible to demonstrate the entire simulator while keeping normal 
 <br>
 
 <p align="center">
-  <img src="./shadow.png" alt="Portal Screenshot">
+  <img src="./demo.png" alt="Lab Screenshot">
 </p>
 
 
