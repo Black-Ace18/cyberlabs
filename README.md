@@ -18,7 +18,7 @@ The entire experience runs in the browser, making it possible to explore cyberse
 ### Project Status
 
 - **Stability**: Production-ready
-- **Deployment**: Live
+- **Deployment**: https://cyberlabs.vercel.app
 - **Hosting**: Vercel
 - **Architecture**: Frontend-only
 - **Persistence**: Browser LocalStorage
@@ -77,10 +77,15 @@ This makes it possible to demonstrate the entire simulator while keeping normal 
 - Lucide Icons
 - Responsive CSS architecture
 
----
 
 
-#### Deployment
+## Visual Representation
 
-- Vercel: https://cyberlabs.vercel.app
+<br>
+
+<p align="center">
+  <img src="./shadow.png" alt="Portal Screenshot">
+</p>
+
+
 
