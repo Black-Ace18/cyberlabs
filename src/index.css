@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-heading: 'Chakra Petch', sans-serif;
+    --font-sans: 'Inter', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #e2e8f0;
+    background-color: #050505;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom Cyber Lab scanline & grid effects */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.cyber-grid {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 255, 65, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 65, 0.04) 1px, transparent 1px);
+}
+
+.cyber-grid-red {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 0, 85, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 0, 85, 0.05) 1px, transparent 1px);
+}
+
+.cyber-grid-blue {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 212, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 212, 255, 0.05) 1px, transparent 1px);
+}
+
+.cyber-grid-dense {
+  background-size: 16px 16px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 255, 65, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 65, 0.06) 1px, transparent 1px);
+}
+
+.radar-sweep {
+  background: conic-gradient(from 0deg, rgba(0, 255, 102, 0.2) 0deg, transparent 60deg, transparent 360deg);
+  animation: radar-spin 4s linear infinite;
+}
+
+@keyframes radar-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes radar-spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+@keyframes circuit-flow {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-circuit-flow {
+  animation: circuit-flow 2s linear infinite;
+}
+
+@keyframes visor-scan {
+  0%, 100% { transform: translateX(-15px); opacity: 0.8; }
+  50% { transform: translateX(15px); opacity: 1; }
+}
+
+.animate-visor-scan {
+  animation: visor-scan 2.5s ease-in-out infinite;
+}
+
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float-gentle {
+  animation: float-gentle 4s ease-in-out infinite;
+}
+
+@keyframes shield-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-shield-spin {
+  animation: shield-spin 12s linear infinite;
+}
+
+@keyframes glitch-anim {
+  0%, 100% { transform: translate(0); }
+  20% { transform: translate(-2px, 1px); }
+  40% { transform: translate(2px, -1px); }
+  60% { transform: translate(-1px, -2px); }
+  80% { transform: translate(1px, 2px); }
+}
+
+@keyframes avatar-recoil {
+  0% { transform: scale(1) rotate(0deg); }
+  20% { transform: scale(0.94) rotate(-3deg) translateY(2px); }
+  40% { transform: scale(1.06) rotate(3deg) translateY(-3px); }
+  60% { transform: scale(0.98) rotate(-1.5deg) translateY(1px); }
+  80% { transform: scale(1.02) rotate(1deg) translateY(-1px); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+.animate-avatar-recoil {
+  animation: avatar-recoil 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.animate-glitch {
+  animation: glitch-anim 0.3s ease-in-out infinite;
+}
+
+/* Scanline Overlay */
+.crt-scanlines::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+  background-size: 100% 4px;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* Subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #112217;
+  border: 1px solid rgba(0, 255, 102, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff66;
+}
