@@ -79,14 +79,8 @@ This makes it possible to demonstrate the entire simulator while keeping normal 
 
 ---
 
-#### Application Architecture
-
-- Client-side simulation engine
-- Deterministic mission logic
-- Local state management
-- Browser LocalStorage persistence
 
 #### Deployment
 
-- Vercel
+- Vercel: https://cyberlabs.vercel.app
 
