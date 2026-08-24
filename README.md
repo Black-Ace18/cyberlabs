@@ -54,40 +54,12 @@ The entire experience runs in the browser, making it possible to explore cyberse
 - SUID lockdown
 - SOC investigation and packet analysis
 
-#### Progressive Mission System
-
-- Structured mission progression
-- Independent Red and Blue progression
-- Mission completion states
-- Persistent progress
-- Replayable scenarios
-- Final missions designed as larger multi-stage simulations
-
-#### Intel Manual
-
-Every mission includes an integrated educational guidance system.
-
-- Contextual cybersecurity guidance
-- Progressive hints
-- No automatic command execution
-- No automatic mission completion
-- Designed to assist without removing the challenge
-
 #### Superuser Mode
 
 A dedicated testing and evaluation environment allows access to the complete mission library without altering authentic user progression.
 
 This makes it possible to demonstrate the entire simulator while keeping normal progression data isolated.
 
-#### Responsive Cybersecurity Interface
-
-- Desktop and mobile support
-- Terminal-inspired interfaces
-- Cybersecurity dashboards
-- Mission-specific visual environments
-- Responsive layouts
-- High-contrast information displays
-- Cyberpunk-inspired HUD elements
 
 ---
 
@@ -105,6 +77,8 @@ This makes it possible to demonstrate the entire simulator while keeping normal 
 - Lucide Icons
 - Responsive CSS architecture
 
+---
+
 #### Application Architecture
 
 - Client-side simulation engine
@@ -116,35 +90,3 @@ This makes it possible to demonstrate the entire simulator while keeping normal 
 
 - Vercel
 
----
-
-### Architecture
-
-Cyber Labs is intentionally built as a **frontend-only application**.
-
-There is no backend, database, authentication service, or AI API required to operate the simulator.
-
-Mission states, command validation, progression, simulated environments, and user data are handled locally within the application.
-
-```text
-User
-  |
-  v
-Cyber Labs Interface
-  |
-  +-------------------+
-  |                   |
-  v                   v
-Red Pill            Blue Pill
-  |                   |
-  v                   v
-Offensive           Defensive
-Simulations         Simulations
-  |                   |
-  +---------+---------+
-            |
-            v
-      Mission Engine
-            |
-            v
-       LocalStorage
