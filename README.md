@@ -18,9 +18,8 @@ The entire experience runs in the browser, making it possible to explore cyberse
 ### Project Status
 
 - **Stability**: Production-ready
-- **Deployment**: https://cyberlabs.vercel.app
+- **Deployment**: https://cyberlabs-simulator.vercel.app
 - **Hosting**: Vercel
-- **Architecture**: Frontend-only
 - **Persistence**: Browser LocalStorage
 
 ---
@@ -31,7 +30,6 @@ The entire experience runs in the browser, making it possible to explore cyberse
 
 - Command-driven cybersecurity simulations
 - Simulated Linux terminal workflows
-- Command parsing and validation
 - Dynamic terminal responses
 - Realistic system feedback
 - Mission-specific command environments
@@ -43,7 +41,6 @@ The entire experience runs in the browser, making it possible to explore cyberse
 - Linux permissions
 - Network reconnaissance
 - Web application security
-- Privilege escalation
 - Wireless security
 
 **Blue Pill — Defensive Operations**
@@ -51,7 +48,6 @@ The entire experience runs in the browser, making it possible to explore cyberse
 - Linux system hardening
 - Firewall configuration
 - Input and application defense
-- SUID lockdown
 - SOC investigation and packet analysis
 
 #### Superuser Mode
