@@ -63,21 +63,6 @@ This makes it possible to demonstrate the entire simulator while keeping normal 
 
 ---
 
-### Technology Stack
-
-#### Frontend
-
-- React 18
-- TypeScript
-- Vite
-
-#### UI & Styling
-
-- Tailwind CSS
-- Lucide Icons
-- Responsive CSS architecture
-
-
 
 ## Visual Representation
 
